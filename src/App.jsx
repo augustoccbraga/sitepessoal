@@ -79,10 +79,6 @@ function App() {
 		"Adoro jogos 🎮 e músicas. 🎧",
 		"Espero que goste do site!",
 	];
-	const projetosUrl = {
-		FinanSee: "Finansee",
-		Formulario: "Formulario",
-	};
 
 	const determineDevice = () => {
 		const width = window.innerWidth;
@@ -297,7 +293,7 @@ function App() {
 							techs="react, reactRouter, redux, styledComponents, html, javascript"
 							img={imgProjeto1}
 							device={device}
-							page={projetosUrl.FinanSee}
+							page="https://projeto-finansee.vercel.app"
 						>
 							<p>
 								Site de gerenciamento de finanças, onde você pode criar uma
@@ -322,7 +318,7 @@ function App() {
 							techs="react, javascript, css3, html"
 							img={imgProjeto2}
 							device={device}
-							page={projetosUrl.Formulario}
+							page="https://formulario-job.vercel.app"
 						>
 							<p>
 								Site simples para candidaturas de trabalho. O usuário preenche

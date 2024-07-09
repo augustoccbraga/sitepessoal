@@ -201,7 +201,10 @@ export const ProjetoOddContainer = styled.div`
 	width: 1320px;
 	height: 500px;
 	background: ${({ theme }) => theme.backgroundProjetoOdd};
-	cursor: pointer;
+
+	a {
+		display: contents;
+	}
 
 	@media (max-width: 1400px) {
 		width: 100%;
@@ -228,7 +231,6 @@ export const InfoOddProjeto = styled.div`
 	gap: 16px;
 	justify-content: center;
 	align-self: center;
-	cursor: default;
 
 	p {
 		grid-column-start: 1;
@@ -305,7 +307,10 @@ export const ProjetoEvenContainer = styled.div`
 	width: 1320px;
 	height: 500px;
 	background: ${({ theme }) => theme.backgroundProjetoEven};
-	cursor: pointer;
+
+	a {
+		display: contents;
+	}
 
 	@media (max-width: 1400px) {
 		display: grid;
