@@ -15,7 +15,7 @@ const ImgProjetoOdd = styled.img.attrs((props) => ({
 	@media (max-width: 1400px) {
 		width: 100%;
 	}
-	@media (max-width: 800px) {
+	@media (max-width: 1000px) {
 		display: none;
 	}
 `;
@@ -34,7 +34,7 @@ const ImgProjetoEven = styled.img.attrs((props) => ({
 	@media (max-width: 1400px) {
 		width: 100%;
 	}
-	@media (max-width: 800px) {
+	@media (max-width: 1000px) {
 		display: none;
 	}
 `;

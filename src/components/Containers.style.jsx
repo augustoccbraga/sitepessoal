@@ -322,7 +322,7 @@ export const ProjetoEvenContainer = styled.div`
 		margin: 0;
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: 1000px) {
 		display: flex;
 		flex-direction: column;
 		width: 100%;

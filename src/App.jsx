@@ -166,9 +166,9 @@ function App() {
 		visible: { opacity: 1, y: 0 },
 		hiddenRight: { opacity: 0, x: 0 },
 		visibleRight: { opacity: 1, x: -20 },
-		hiddenOdd: { opacity: 0, x: window.innerWidth < 800 ? 0 : 100 },
+		hiddenOdd: { opacity: 0, x: window.innerWidth < 1000 ? 0 : 100 },
 		visibleOdd: { opacity: 1, x: 0 },
-		hiddenEven: { opacity: 0, x: window.innerWidth < 800 ? 0 : -100 },
+		hiddenEven: { opacity: 0, x: window.innerWidth < 1000 ? 0 : -100 },
 		visibleEven: { opacity: 1, x: 0 },
 	};
 
