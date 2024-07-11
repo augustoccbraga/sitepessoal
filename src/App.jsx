@@ -29,7 +29,7 @@ import MouseEffect from "./components/MouseEffect.jsx";
 import Cube3d from "./components/Cube3d.jsx";
 import imgProjeto1 from "./assets/FinanSeeIMG.jpg";
 import imgProjeto2 from "./assets/FormularioIMG.jpg";
-import Curriculo from "./assets/CV.pdf";
+import Curriculo from "./assets/CV-AUGUSTO.pdf";
 import TypingAnimationContainer from "./components/TypingAnimation.jsx";
 
 const lightTheme = {
