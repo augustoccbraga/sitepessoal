@@ -15,7 +15,13 @@ const TypingWrapper = styled.div`
 	white-space: nowrap;
 	overflow: hidden;
 	position: absolute;
-	top: 13%;
+	top: 14%;
+	@media (max-width: 1400px) {
+		top: 16%;
+	}
+	@media (max-width: 1300px) {
+		top: 18%;
+	}
 	@media (max-width: 800px) {
 		top: 11%;
 		display: none;

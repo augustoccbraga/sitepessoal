@@ -28,7 +28,8 @@ import { motion } from "framer-motion";
 import MouseEffect from "./components/MouseEffect.jsx";
 import Cube3d from "./components/Cube3d.jsx";
 import imgProjeto1 from "./assets/FinanSeeIMG.jpg";
-import imgProjeto2 from "./assets/FormularioIMG.jpg";
+import imgProjeto2 from "./assets/MiniTwitterIMG.jpg";
+import imgProjeto3 from "./assets/FormularioIMG.jpg";
 import Curriculo from "./assets/CV-AUGUSTO.pdf";
 import TypingAnimationContainer from "./components/TypingAnimation.jsx";
 
@@ -290,10 +291,59 @@ function App() {
 					>
 						<ProjetoOdd
 							titulo="Finansee"
-							techs="react, reactRouter, redux, styledComponents, html, javascript"
+							techs="react, reactRouter, tailwind, node, express, prisma, mongoDB"
 							img={imgProjeto1}
 							device={device}
-							page="https://projeto-finansee.vercel.app"
+							page="https://project-finansee.vercel.app/"
+						>
+							<p>
+								Aplicacao full stack de controle financeiro pessoal, com
+								cadastro e login de usuarios, rotas protegidas e gerenciamento
+								de <strong>contas, categorias e transacoes</strong>. O painel
+								permite acompanhar receitas, despesas, saldo e distribuicao por
+								conta com graficos e filtros por periodo. No backend, a API em{" "}
+								<strong>Node.js</strong> e <strong>Express</strong> usa{" "}
+								<strong>Prisma</strong>, <strong>MongoDB</strong>, JWT em
+								cookies, bcrypt e validacoes com Zod.
+							</p>
+						</ProjetoOdd>
+					</motion.div>
+					<motion.div
+						initial="hiddenEven"
+						animate={showEvenProject ? "visibleEven" : "hiddenEven"}
+						variants={variants}
+					>
+						<ProjetoEven
+							titulo="Mini Twitter"
+							techs="react, typescript, reactRouter, reactQuery, zustand, tailwind, zod, axios"
+							img={imgProjeto2}
+							device={device}
+							page="https://github.com/augustoccbraga/mini-twitter-frontend"
+						>
+							<p>
+								Frontend de uma rede social inspirada no Twitter/X, com
+								autenticacao, feed de posts, busca, publicacao com imagem,
+								curtidas e edicao/exclusao dos proprios posts. A interface foi
+								construida com <strong>React</strong>,{" "}
+								<strong>TypeScript</strong> e <strong>Tailwind CSS</strong>,
+								usando React Query para cache e mutacoes, Zustand para sessao
+								persistida, React Hook Form e Zod para validacao dos formularios
+								e Axios para comunicacao com a API.
+							</p>
+						</ProjetoEven>
+					</motion.div>
+					<motion.div
+						initial="hiddenOdd"
+						animate={showOddProject ? "visibleOdd" : "hiddenOdd"}
+						variants={variants}
+					>
+						<ProjetoOdd
+							titulo="Formulário"
+							techs="react, javascript, css3, html"
+							img={imgProjeto3}
+							device={device}
+							page="https://formulario-job.vercel.app"
+							margin="340px auto"
 						>
 							<p>
 								Site de gerenciamento de finanças, onde você pode criar uma
@@ -307,30 +357,6 @@ function App() {
 								construção, e estilizado com <strong>Styled Components</strong>.
 							</p>
 						</ProjetoOdd>
-					</motion.div>
-					<motion.div
-						initial="hiddenEven"
-						animate={showEvenProject ? "visibleEven" : "hiddenEven"}
-						variants={variants}
-					>
-						<ProjetoEven
-							titulo="Formulário"
-							techs="react, javascript, css3, html"
-							img={imgProjeto2}
-							device={device}
-							page="https://formulario-job.vercel.app"
-						>
-							<p>
-								Site simples para candidaturas de trabalho. O usuário preenche
-								as informações necessárias e obrigatórias, e, utilizando
-								<strong> React</strong> e <strong>regex</strong>, os campos são
-								validados automaticamente após a inserção das informações. O
-								site foi desenvolvido com <strong>React </strong>e
-								<strong> Vite</strong>, aproveitando conhecimentos de
-								<strong> regex</strong> e estilizado com módulos utilizando
-								<strong> CSS</strong>.
-							</p>
-						</ProjetoEven>
 					</motion.div>
 				</PortfolioContainer>
 				<ContatoContainer>
@@ -363,7 +389,7 @@ function App() {
 					</ContatoBoxContainer>
 				</ContatoContainer>
 				<FooterContainer>
-					<p>2024 @ All rights reserved</p>
+					<p>2026 @ All rights reserved</p>
 				</FooterContainer>
 			</MouseEffect>
 		</ThemeProvider>

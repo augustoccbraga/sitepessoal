@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import ImgProjeto from "./ImgProjeto.jsx";
 import Button from "./Button.jsx";
 
-const ProjetoOdd = ({ titulo, techs, img, children, device, page }) => {
+const ProjetoOdd = ({ titulo, techs, img, children, device, page, margin }) => {
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
@@ -21,6 +21,7 @@ const ProjetoOdd = ({ titulo, techs, img, children, device, page }) => {
 			onMouseLeave={() => setIsHovered(false)}
 			$device={device}
 			$page={page}
+			$margin={margin}
 		>
 			<DetalheOddProjeto />
 			<DetalheOddProjetoFim />

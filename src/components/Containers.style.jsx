@@ -158,7 +158,7 @@ export const CuboContainer = styled.div`
 `;
 
 export const PortfolioContainer = styled.section`
-	margin: 0 auto 420px;
+	margin: 0 auto;
 	padding: 0px 240px;
 	display: grid;
 	grid-template-rows: 82px 675px 675px;
@@ -191,7 +191,7 @@ export const PortfolioContainer = styled.section`
 `;
 
 export const ProjetoOddContainer = styled.div`
-	margin: 60px auto;
+	margin: ${({ $margin }) => $margin || "60px auto"};
 	display: grid;
 	grid-template-columns: 425px 800px 95px;
 	position: relative;
@@ -336,7 +336,7 @@ export const ProjetoEvenContainer = styled.div`
 export const InfoEvenProjeto = styled.div`
 	display: grid;
 	grid-template-rows: 1fr 3fr;
-	grid-template-columns: 450px 250px;
+	grid-template-columns: 425px 275px;
 	gap: 16px;
 	justify-content: center;
 	align-self: center;
