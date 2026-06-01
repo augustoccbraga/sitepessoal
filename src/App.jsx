@@ -318,7 +318,7 @@ function App() {
 							techs="react, typescript, reactRouter, reactQuery, zustand, tailwind, zod, axios"
 							img={imgProjeto2}
 							device={device}
-							page="https://github.com/augustoccbraga/mini-twitter-frontend"
+							page="https://mini-twitter-project-one.vercel.app/"
 						>
 							<p>
 								Frontend de uma rede social inspirada no Twitter/X, com
